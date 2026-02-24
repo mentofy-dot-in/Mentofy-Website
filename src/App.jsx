@@ -5,6 +5,8 @@ import FeaturesGrid from './components/FeaturesGrid';
 import SleepHealth from './components/SleepHealth';
 import AntiCheat from './components/AntiCheat';
 import FooterCTA from './components/FooterCTA';
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   useEffect(() => {
@@ -41,7 +43,9 @@ function App() {
         <AntiCheat />
       </main>
       <FooterCTA />
+      <Analytics />
     </>
+
   );
 }
 
