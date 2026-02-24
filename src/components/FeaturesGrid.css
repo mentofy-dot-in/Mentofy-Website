@@ -1,0 +1,48 @@
+.features-grid {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.challenge-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.category-title {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 24px;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 12px;
+}
+
+.grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 24px;
+    border-radius: 16px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 229, 255, 0.4);
+}
+
+.grid-item h4 {
+    font-size: 1.2rem;
+    color: var(--accent-cyan);
+    margin-bottom: 12px;
+}
+
+.grid-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}

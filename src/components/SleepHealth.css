@@ -1,0 +1,64 @@
+.sleep-health {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.feature-list {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-top: 20px;
+}
+
+.feature-list li {
+    margin-bottom: 8px;
+    padding-left: 8px;
+}
+
+.feature-list li strong {
+    color: #fff;
+}
+
+.overlay-mockup {
+    width: 100%;
+    max-width: 320px;
+    height: 240px;
+    background: linear-gradient(180deg, rgba(20, 20, 40, 0.9), rgba(10, 10, 20, 1));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-mockup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at top right, rgba(0, 123, 255, 0.2), transparent);
+    pointer-events: none;
+}
+
+.quote {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    color: #e0e0e0;
+}
+
+.btn-snooze {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 0.9rem;
+}
