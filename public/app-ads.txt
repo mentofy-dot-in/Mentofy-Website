@@ -1,2 +1,2 @@
-#AdMob
 google.com, pub-4833358259731112, DIRECT, f08c47fec0942fa0
+# applovin.com, PUBLISHER_ID, DIRECT (Receive after account approval)
