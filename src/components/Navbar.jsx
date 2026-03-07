@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? 'nav-scrolled' : ''}`}>
       <div className="container nav-content">
-        <div className="logo">Mentofy</div>
+        <div className="logo"><Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>Mentofy</Link></div>
         <button
           className="btn-primary nav-cta"
           onClick={() => window.open('https://play.google.com/store/apps/details?id=com.momentum.alarm', '_blank')}

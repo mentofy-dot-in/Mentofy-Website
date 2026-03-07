@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './FooterCTA.css';
 
 const FooterCTA = () => {
@@ -21,6 +22,9 @@ const FooterCTA = () => {
 
                 <div className="footer-bottom">
                     <p>&copy; {new Date().getFullYear()} Mentofy. All rights reserved.</p>
+                    <Link to="/privacy-policy" style={{ color: '#a78bfa', textDecoration: 'none', fontSize: '0.9rem', marginTop: '8px', display: 'inline-block' }}>
+                        Privacy Policy
+                    </Link>
                 </div>
             </div>
         </footer>
