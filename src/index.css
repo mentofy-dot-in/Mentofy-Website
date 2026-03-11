@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-:root {
+/* ===== DARK THEME (default) ===== */
+:root,
+[data-theme="dark"] {
   /* Colors */
   --bg-color: #050505;
+  --bg-secondary: #0a0a0a;
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
+  --text-muted: #666666;
 
   /* Electric Blue Accents */
   --accent-blue: #007BFF;
@@ -14,6 +18,19 @@
   /* Glassmorphism */
   --glass-bg: rgba(25, 25, 25, 0.6);
   --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-card-bg: linear-gradient(145deg, rgba(0, 123, 255, 0.05), rgba(15, 15, 15, 0.9));
+  --card-hover-border: rgba(0, 229, 255, 0.3);
+
+  /* Nav */
+  --nav-bg: rgba(5, 5, 5, 0.75);
+
+  /* Shadows */
+  --shadow-card: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  --shadow-card-hover: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+
+  /* Mesh background */
+  --mesh-1: rgba(0, 123, 255, 0.05);
+  --mesh-2: rgba(0, 229, 255, 0.08);
 
   /* Typography */
   --font-inter: 'Inter', sans-serif;
@@ -22,6 +39,32 @@
   --header-height: 80px;
   --section-padding: 120px 20px;
   --max-width: 1200px;
+}
+
+/* ===== LIGHT THEME ===== */
+[data-theme="light"] {
+  --bg-color: #f8f9fc;
+  --bg-secondary: #ffffff;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+
+  --accent-blue: #2563eb;
+  --accent-cyan: #0891b2;
+  --accent-glow: rgba(37, 99, 235, 0.25);
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-card-bg: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(241, 245, 249, 0.95));
+  --card-hover-border: rgba(37, 99, 235, 0.3);
+
+  --nav-bg: rgba(248, 249, 252, 0.85);
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 12px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(37, 99, 235, 0.1);
+
+  --mesh-1: rgba(37, 99, 235, 0.04);
+  --mesh-2: rgba(8, 145, 178, 0.06);
 }
 
 * {
@@ -38,6 +81,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 /* Base Styles */
@@ -70,9 +114,10 @@ ul {
   height: 100vh;
   z-index: -1;
   background:
-    radial-gradient(circle at 15% 50%, rgba(0, 123, 255, 0.05), transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(0, 229, 255, 0.08), transparent 50%);
+    radial-gradient(circle at 15% 50%, var(--mesh-1), transparent 50%),
+    radial-gradient(circle at 85% 30%, var(--mesh-2), transparent 50%);
   pointer-events: none;
+  transition: background 0.4s ease;
 }
 
 /* Layout Utilities */
@@ -94,7 +139,7 @@ ul {
 .features-header h2 {
   font-size: clamp(2.5rem, 4vw, 3.5rem);
   margin-bottom: 16px;
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .features-header p {
@@ -112,18 +157,18 @@ ul {
 }
 
 .glass-card {
-  background: linear-gradient(145deg, rgba(0, 123, 255, 0.05), rgba(15, 15, 15, 0.9));
+  background: var(--glass-card-bg);
   border: 1px solid var(--glass-border);
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05), 0 8px 32px 0 rgba(0, 0, 0, 0.5);
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.05), var(--shadow-card);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease, background 0.4s ease;
 }
 
 .glass-card:hover {
   transform: translateY(-8px) scale(1.02);
-  border-color: rgba(0, 229, 255, 0.3);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px var(--accent-glow);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--shadow-card-hover);
 }
 
 /* Buttons */
@@ -184,7 +229,7 @@ ul {
 
 .card-content h3 {
   font-size: 1.8rem;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 16px;
 }
 

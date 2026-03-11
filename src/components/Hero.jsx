@@ -11,11 +11,12 @@ const Hero = () => {
                         Introducing Momentum
                     </div>
                     <h1 className="headline">
-                        Stop Tracking.<br />
-                        <span className="text-gradient">Start Achieving.</span>
+                        The only app<br />
+                        <span className="text-bold">YOU</span> need to stay<br />
+                        <span className="text-gradient">DISCIPLINED.</span>
                     </h1>
                     <p className="sub-headline">
-                        The next generation habit tracker that adapts to your life. Powerful analytics, beautiful design, and zero friction.
+                        A smart alarm that forces you to complete tasks — math problems, mini-games, physical challenges — before it turns off. No snoozing. No excuses. Just discipline.
                     </p>
                     <div className="hero-actions">
                         <button
@@ -24,13 +25,12 @@ const Hero = () => {
                         >
                             Get it on Google Play
                         </button>
-                        <p className="trusted-text">Join 50,000+ top performers</p>
+                        <p className="trusted-text">Join 50,000+ early risers</p>
                     </div>
                 </div>
 
                 <div className="hero-visual reveal delay-300">
                     <div className="mockup-container">
-                        {/* The actual image will be placed here once generated */}
                         <img src="/momentum_app_mockup.png" alt="Momentum App Mockup" className="app-mockup" />
                         <div className="mockup-glow"></div>
                     </div>

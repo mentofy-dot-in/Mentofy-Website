@@ -7,8 +7,8 @@ const FooterCTA = () => {
         <footer className="footer-cta section">
             <div className="container">
                 <div className="cta-box glass-card reveal delay-100">
-                    <h2>Ready to Build Your Momentum?</h2>
-                    <p>Start tracking your habits today and see the results tomorrow.</p>
+                    <h2>Ready to Wake Up Disciplined?</h2>
+                    <p>Stop snoozing. Start your mornings with purpose and momentum.</p>
                     <button
                         className="btn-primary btn-large cta-btn"
                         onClick={() => window.open('https://play.google.com/store/apps/details?id=com.momentum.alarm', '_blank')}
@@ -22,7 +22,7 @@ const FooterCTA = () => {
 
                 <div className="footer-bottom">
                     <p>&copy; {new Date().getFullYear()} Mentofy. All rights reserved.</p>
-                    <Link to="/privacy-policy" style={{ color: '#a78bfa', textDecoration: 'none', fontSize: '0.9rem', marginTop: '8px', display: 'inline-block' }}>
+                    <Link to="/privacy-policy" style={{ color: 'var(--accent-cyan)', textDecoration: 'none', fontSize: '0.9rem', marginTop: '8px', display: 'inline-block' }}>
                         Privacy Policy
                     </Link>
                 </div>

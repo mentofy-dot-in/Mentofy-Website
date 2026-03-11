@@ -6,8 +6,8 @@ const SleepHealth = () => {
         <section className="sleep-health section">
             <div className="container">
                 <div className="features-header reveal delay-100">
-                    <h2>🌙 Sleep Health & Pre-Bed</h2>
-                    <p>Momentum isn't just about waking up; it's about going to sleep correctly.</p>
+                    <h2>🌙 Sleep Better, Wake Stronger</h2>
+                    <p>Momentum helps you wind down at night so you can conquer the morning.</p>
                 </div>
 
                 <div className="bento-grid">

@@ -55,8 +55,8 @@ const FeaturesGrid = () => {
         <section className="features-grid section">
             <div className="container">
                 <div className="features-header reveal delay-100">
-                    <h2>The 24 Wake-Up Challenges</h2>
-                    <p>Momentum guarantees you get out of bed with tasks that force cognitive and physical alertness.</p>
+                    <h2>24 Tasks to Prove You're Awake</h2>
+                    <p>You can't dismiss the alarm until you complete a challenge. No shortcuts. No cheating.</p>
                 </div>
 
                 <div className="challenge-categories">

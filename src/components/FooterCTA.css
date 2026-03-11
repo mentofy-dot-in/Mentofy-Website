@@ -6,14 +6,14 @@
 .cta-box {
     padding: 80px 40px;
     text-align: center;
-    background: linear-gradient(145deg, rgba(0, 123, 255, 0.1), rgba(15, 15, 15, 0.9));
+    background: var(--glass-card-bg);
     border-color: rgba(0, 123, 255, 0.2);
     margin-bottom: 60px;
 }
 
 .cta-box h2 {
     font-size: clamp(2rem, 3.5vw, 3rem);
-    color: #fff;
+    color: var(--text-primary);
     margin-bottom: 20px;
 }
 
@@ -30,8 +30,8 @@
 
 .footer-bottom {
     text-align: center;
-    color: #666;
+    color: var(--text-muted);
     font-size: 0.9rem;
     padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid var(--glass-border);
 }

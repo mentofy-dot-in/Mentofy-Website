@@ -15,7 +15,7 @@
 }
 
 .feature-list li strong {
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .overlay-mockup {
@@ -24,13 +24,13 @@
     height: 240px;
     background: linear-gradient(180deg, rgba(20, 20, 40, 0.9), rgba(10, 10, 20, 1));
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--glass-border);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 24px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-card);
     position: relative;
     overflow: hidden;
 }
