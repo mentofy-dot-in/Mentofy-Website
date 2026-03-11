@@ -17,15 +17,14 @@ const PrivacyPolicy = () => {
             </Link>
 
             <h1>Privacy Policy</h1>
-            <span className="effective-date">Effective Date: March 7, 2026 &nbsp;|&nbsp; Last Updated: March 7, 2026</span>
+            <span className="effective-date">Effective Date: March 7, 2026 &nbsp;|&nbsp; Last Updated: March 11, 2026</span>
 
             {/* ===== 1. INTRODUCTION ===== */}
             <h2>1. Introduction</h2>
             <p>
                 Welcome to <strong>Momentum – Alarm, Discipline</strong> ("Momentum," "App," "we," "us," or "our"), operated by
                 Mentofy ("Company"). This Privacy Policy explains how we collect, use, disclose, and safeguard your personal
-                information when you use our mobile application available on the Google Play Store (Android) and the Apple App
-                Store (iOS), and when you visit our website at{' '}
+                information when you use our mobile application available on the Google Play Store (Android), and when you visit our website at{' '}
                 <a href="https://mentofy.in" target="_blank" rel="noopener noreferrer">https://mentofy.in</a>.
             </p>
             <p>
