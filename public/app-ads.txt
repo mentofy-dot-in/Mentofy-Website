@@ -1,2 +1,2 @@
 google.com, pub-4833358259731112, DIRECT, f08c47fec0942fa0
-# applovin.com, PUBLISHER_ID, DIRECT (Receive after account approval)
+facebook.com, 363594344935121, DIRECT, c3e20eee3f780d68
